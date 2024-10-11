@@ -77,6 +77,8 @@ To reserve structure destruction, use `defer api.Close()`.
 
 Return value: `*Profile`, `message`.  
 This returns a pointer to the `Profile` object along with the original `decodedMessage`.
+If the profile does not exist, it returns nill.
+
 
 The keys and values from `decodedMessage` are outlined above, but some fields remain unclear. Help would be appreciated for those.
 
@@ -99,3 +101,4 @@ func main() {
 ```
 
 # **Do not use for commercial purposes**
+This project is under development, if you see any bugs or areas that need fixing, please create an issue!
